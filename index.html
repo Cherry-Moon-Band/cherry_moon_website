@@ -5,17 +5,37 @@
         <title>Cherry Moon</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"> 
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-</head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <style>
+            body {
+                animation: fadeInAnimation ease 1s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+            @keyframes fadeInAnimation {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+
+    </head>
     <body>
+
+        <script>
+            document.body.classList.add('fade');
+        </script>
 
         <section class="header">
             <nav>
                 <!--<a href="index.html"><img src="images/logo.png"></a>-->
-                <div class="nav-links">
-                    <!--<i class="fas fa-times"></i>-->
+                <div class="nav-links" id="navLinks">
+
                     <ul>
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="shows.html">SHOWS</a></li>
@@ -24,7 +44,7 @@
                         <li><a href="about.html">ABOUT</a></li>
                     </ul>
                 </div>
-                <!--<i class="fas fa-bars"></i>-->
+
             </nav>
 
             <!--<div class="text-box">
@@ -38,7 +58,27 @@
                 <h3>Blacksburg, Virginia's newest psychedelic rock band</h3>
             </div>
 
+            <div class="mobile-title">
+                <h2>Cherry</h2>
+                <h2>Moon</h2>
+                <h3>Blacksburg, Virginia's</h3>
+                <h3>newest psychedelic rock band</h3>
+            </div>
+
         </section>
+
+        <!------------ SCRIPT TO OPEN TOGGLE MENU ------------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200";
+            }
+            
+        </script>
 
     </body>
 </html>
