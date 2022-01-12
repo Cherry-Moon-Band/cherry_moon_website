@@ -748,7 +748,9 @@ nav .fas{
   }
 
   .header{
-    background-size: auto;
+    background-image: url(images/phone_back.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 
   .curr-show{
