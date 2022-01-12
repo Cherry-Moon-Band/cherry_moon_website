@@ -748,7 +748,7 @@ nav .fas{
   }
 
   .header{
-    background-size: cover;
+    background-size: auto;
   }
 
   .curr-show{
