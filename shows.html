@@ -1,3 +1,16 @@
+<!------------------------------------------------------------------------
+    Cherry Moon band website HTML code.
+
+    Created: 01/10/2022
+    Author: Anna Brogowski (les_bro)
+    Co-Authors:
+
+    This file is the Show Date page of the website.
+    ANY OBJECT YOU PUT IN THE PAGE WILL BE TRANSLATED TO THE WEBSITE
+    LINEARLY. IF YOU PUT ONE OBJECT TOWARD THE TOP OF THE <body> SECTION,
+    THEN IT WILL SHOW UP AT THE TOP OF THE WEBPAGE.
+-------------------------------------------------------------------------->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,11 +21,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">        <link rel="icon" href="images/favicon.png">
-        <meta property="og:image" content="images/band1.png" />
+        <meta property="og:image" content="https://imgur.com/gallery/J2dsZdq" />
         <meta property="og:description" content="Come see the latest list of Cherry Moon shows in your area!" />
         <meta property="og:url"content="http://www.cherrymoonband.com/shows.html" />
         <meta property="og:title" content="Cherry Moon Show Dates" />
-        <!-- <style>
+        <!-- REMOVED SECTION OF CODE (DNW) : but keep for reference
+            <style>
             body {
                 animation: fadeInAnimation ease 1s;
                 animation-iteration-count: 1;
@@ -28,45 +42,57 @@
             }
         </style> -->
     
-    </head>
+    </head> <!--This is the end of the header-->
+
     <body>
 
+        <!------- Facebook sharing integration links DO NOT REMOVE ------->
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="W20Y6fXL"></script>
-
+        <!---------------------------------------------------------------->
+        
         <section class="header">
             <nav>
                 <!--<a href="index.html"><img src="images/logo.png"></a>-->
                 <div class="nav-links">
-                    <!--<i class="fas fa-times"></i>-->
                     <ul>
+                        <!-- 
+                            If you changed the pages by adding or removing one,
+                            you have to copy that line of code and add it here,
+                            IN THE SAME ORDER.
+                         -->
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="shows.html">SHOWS</a></li>
                         <li><a href="photos.html">PHOTOS</a></li>
                         <li><a href="mailto: cherrymoonbandva@gmail.com">CONTACT</a></li>
                         <li><a href="about.html">ABOUT</a></li>
+                        <!-- Social Media Links (remember to update them with changes too) -->
                         <a href="https://www.instagram.com/cherrymoondudes/"><img src="images/instagram.png"></a>
                     </ul>
                 </div>
-                <!--<i class="fas fa-bars"></i>-->
             </nav>
 
         <!--------------SHOWS-------------->
+        <!-- 
+            This section is done in a chart-formation. There are rows and columns.
+            You can only place show information in the "show-column" tag areas in
+            order for it to be formatted correctly.
+         -->
         <section class="shows">
             <h1>Show Dates</h1>
             <h2>The following is a list of upcoming shows for Cherry Moon:</h2>
 
-            <!-- Check this for Facebook interfacing: https://www.facebook.com/dialog/feed?app_id=APP_ID&link=URL&picture=THUMBNAIL_URL&name=NAME&description=DESCRIPTION&caption=CAPTION&redirect_uri=REDIRECT_URI -->
-
             <div class="show-row">
+                <!-- This is the first event module -->
                 <div class="show-column">
-                    <h2>Cherry Moon with Orange Doors and Wearing Hands</h2>
-                    <p>The Milk Parlor, Blacksburg, VA</p>
+                    <h2>Cherry Moon with Orange Doors and Wearing Hands</h2> <!--This is an example of header text, there are different sized headers and paragraph labels you can use to alter the look of your page-->
+                    <p>The Milk Parlor, Blacksburg, VA</p> <!--This is an example of paragraph text-->
                     <h4>Saturday, January 15 at 9:00 PM</h4>
                     <div class="fb-share-button" data-href="http://www.cherrymoonband.com/shows.html" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.cherrymoonband.com%2Fshows.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
                     <a href="http://twitter.com/share?text=Come see Cherry Moon with Orange Doors and Wearing Hands at the Milk Parlor in Blacksburg! Saturday, January 15th at 9PM&url=http://www.cherrymoonband.com/shows.html"><i class="fab fa-twitter"></i></a>
                     <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=Y29zM2dlOWtjbGozYWI5aDcwbzZjYjlrYzVqMzBiYjFjOHJtNGI5aTZvcmo2ZTlsY2dzbThkcjI2OCB2dC5lZHVfM3F2c3UzZTdrbTM2OWM4dmc0aWsxZWRiNTRAZw&tmsrc=vt.edu_3qvsu3e7km369c8vg4ik1edb54%40group.calendar.google.com"><img src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
                 </div>
+                <!-- This is the second event module -->
                 <div class="show-column">
                     <h2>Cherry Moon in <b><i>Richmond</i></b></h2>
                     <h3>Orange Doors, Dead Psychic, and Earth Dog Mothership</h3>
@@ -77,6 +103,7 @@
                     <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=Nm9vbWNjaG02NHIzOGI5aWNkaGppYjlrNzVqNmFiYjE2Z3EzY2JiNjYwcWowb2IyY2NwbWNjYjU2YyB2dC5lZHVfM3F2c3UzZTdrbTM2OWM4dmc0aWsxZWRiNTRAZw&tmsrc=vt.edu_3qvsu3e7km369c8vg4ik1edb54%40group.calendar.google.com"><img src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
                     <p><a href="https://www.etix.com/ticket/p/5389201/earth-dog-mothershipcherry-moonorange-doorsdead-psychic-richmond-the-camel?partner_id=240">BUY TICKETS</a></p>
                 </div>
+                <!-- This is the third event module -->
                 <div class="show-column">
                     <h2>Cherry Moon with Shelby and the Noodle</h2>
                     <p>Blacksburg, VA</p>
@@ -85,6 +112,7 @@
                     <a href="http://twitter.com/share?text=Come see Cherry Moon with Shelby and the Noodle at the Milk Parlor in Blacksburg! Friday, January 28th at 8PM&url=http://www.cherrymoonband.com/shows.html"><i class="fab fa-twitter"></i></a>
                     <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NmNvM2NvaGk2c3NqYWI5bGNkaDZhYjlrY2hqNjZiOXA2aGdtOGJiNmM0cWo2ZTlwY2tzM2VvaG1jYyB2dC5lZHVfM3F2c3UzZTdrbTM2OWM4dmc0aWsxZWRiNTRAZw&tmsrc=vt.edu_3qvsu3e7km369c8vg4ik1edb54%40group.calendar.google.com"><img src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
                 </div>
+                <!-- This is the fourth event module -->
                 <div class="show-column">
                     <h2>Cherry Moon and Palmyra</h2>
                     <p>Blacksburg, VA</p>
@@ -93,13 +121,18 @@
                     <a href="http://twitter.com/share?text=Come see Cherry Moon and Palmyra at the Milk Parlor in Blacksburg! Friday, February 4th at 8PM&url=http://www.cherrymoonband.com/shows.html"><i class="fab fa-twitter"></i></a>
                     <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=Y3BoMzhvaGo3NHNqNmJiMzc1Z2plYjlrNmtxMzBiYjI2bGo2NmI5Z2NrbzNpZDFpNjRyNjJjOWs2YyB2dC5lZHVfM3F2c3UzZTdrbTM2OWM4dmc0aWsxZWRiNTRAZw&tmsrc=vt.edu_3qvsu3e7km369c8vg4ik1edb54%40group.calendar.google.com"><img src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
                 </div>
-            </div>
+            </div> <!--This is the end of the row-column section-->
 
-        </section>
+        </section><!--This is the end of the container for the row-column section-->
         
+        <!-- 
+            This is the beginning of the footer. Everything you want to see in the
+            bottom footer of the website should be contained within the 
+            <section>...</section> labels.
+         -->
         <section class="footer">
             <h5>Made with <i class="fas fa-hand-middle-finger"></i> from les_bro</h5>
-        </section>
+        </section><!--This is the end of the footer-->
 
-    </body>
+    </body><!--This is the end of the page body NOTHING GOES BELOW HERE-->
 </html>

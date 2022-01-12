@@ -1,3 +1,17 @@
+/*------------------------------------------------------------------------
+    Cherry Moon band website CSS code.
+
+    Created: 01/10/2022
+    Author: Anna Brogowski (les_bro)
+    Co-Authors:
+
+    This file holds all the aesthetic and color values for the various
+    web pages.
+    ANY OBJECT YOU PUT IN THE PAGE WILL BE TRANSLATED TO THE WEBSITE
+    LINEARLY. IF YOU PUT ONE OBJECT TOWARD THE TOP OF THE <body> SECTION,
+    THEN IT WILL SHOW UP AT THE TOP OF THE WEBPAGE.
+--------------------------------------------------------------------------*/
+
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +20,11 @@
 .header{
     min-height: 100vh;
     width: 100%;
+    /* CHANGE THE COMPUTER-VERSION BACKGROUND
+        - Add image to the "images" file
+        - Change the "url(images/new_name.jpg)" section
+        Can add color filters with the Linear Gradient section
+    */
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(images/cherry.png);
     background-position:center;
     background-size: cover;
@@ -55,7 +74,8 @@ nav img{
   opacity: 70%;
 }
 
-/*--------------- GLITCH NAME --------------------*/
+/*--------------- GLITCH LOGO --------------------*/
+/* DO NOT TOUCH ANY OF THIS CODE.... It is very finicy */
 body {
     color: #ccc;
     background: #111;
@@ -570,6 +590,10 @@ body {
   }
 /*------------------END OF NAME GLITCH-----------------------*/
 
+/* The current show flyer visual settings:
+    - Change position by altering "text-align"
+    - Change image size by alterting "max-width" (don't change height, it will adjust itself)
+*/
 .curr-show{
   text-align: center;
   display: block;
@@ -579,7 +603,7 @@ body {
   height: auto;
 }
 
-/* ------------------ SHOWS --------------------- */
+/* ------------------ SHOWS PAGE SETTINGS --------------------- */
 .shows{
     width: 80%;
     margin: auto;
@@ -639,7 +663,7 @@ body {
   padding: 0px 5px;
 }
 
-/*-------------PHOTOS-------------*/
+/*------------- PHOTOS PAGE SETTINGS -------------*/
 .photos {
     margin: auto;
     text-align: center;
@@ -654,7 +678,7 @@ body {
     width: 90%;
 }
 
-/*-------------- ABOUT ------------*/
+/*-------------- ABOUT PAGE SETTINGS ------------*/
 .about{
     width: 80%;
     margin: auto;
@@ -694,7 +718,7 @@ body {
   text-shadow: 0 0 15px white;
 }
 
-/*-------------footer-------------*/
+/*------------- FOOTER GENERAL SETTINGS -------------*/
 .footer{
     width: 100%;
     text-align: center;
@@ -711,7 +735,7 @@ body {
     bottom: 10px;
 }
 
-/* ------------ MOBILE -------------- */
+/* ------------ MOBILE WEBSITE SETTINGS -------------- */
 nav .fas{
   display: none;
 }
@@ -762,7 +786,9 @@ nav .fas{
     max-width: 90%;
     height: auto;
   }
-  /*.mobile-title h2{
+
+  /* REMOVED SECTION OF CODE (DNW) : but keep for reference
+  .mobile-title h2{
     font-size: 80px;
     color: white;
     top: 0px;
