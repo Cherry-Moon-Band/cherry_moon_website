@@ -574,7 +574,7 @@ body {
   display: block;
 }
 .curr-show img{
-  max-width: 60%;
+  max-width: 20%;
   height: auto;
 }
 
@@ -751,6 +751,14 @@ nav .fas{
     background-size: cover;
   }
 
+  .curr-show{
+    text-align: center;
+    display: block;
+  }
+  .curr-show img{
+    max-width: 60%;
+    height: auto;
+  }
   /*.mobile-title h2{
     font-size: 80px;
     color: white;
