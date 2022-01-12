@@ -723,12 +723,13 @@ nav .fas{
   }
 
   .hero-container h2{
-    font-size: 35px;
-    padding-bottom: 5%;
+    font-size: 85px;
+    padding-bottom: 70%;
+    padding-top: 30%;
   }
 
   .hero-container h3{
-    font-size: 15px;
+    font-size: 19px;
     
     flex-basis: 23%;
     background:black;
@@ -737,12 +738,10 @@ nav .fas{
     padding: 5px 5px;
     box-sizing: border-box;
   }
-  
 
   .header{
     background-size: cover;
   }
-
 
   /*.mobile-title h2{
     font-size: 80px;
