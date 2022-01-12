@@ -740,12 +740,12 @@ nav .fas{
   .hero-container h3{
     font-size: 20px;
     
-    /* flex-basis: 23%;
+    flex-basis: 23%;
     background:black;
-    border-radius: 0px; */
+    border-radius: 0px;
     margin-bottom: 0%;
     padding: 0px 5px;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
   }
 
   .header{
