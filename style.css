@@ -717,12 +717,15 @@ nav .fas{
     padding: 65px 0;
     text-align: center;
   }
+
   .hero-container h2{
-    font-size: 80px;
+    font-size: 35px;
+    margin-bottom: 200px;
   }
+  .hero-container {overflow-clip-margin: auto;}
   .hero-container h3{
     font-size: 25px;
-
+    
     flex-basis: 23%;
     background:black;
     border-radius: 0px;
@@ -797,6 +800,7 @@ nav .fas{
   .about-row{
     flex-direction: column;
   }
+
 
 }
 /* -----------------------------------*/
