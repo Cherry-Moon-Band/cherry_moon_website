@@ -569,85 +569,6 @@ body {
   }
 /*------------------END OF NAME GLITCH-----------------------*/
 
-/* ------------ MOBILE -------------- */
-nav .fas{
-  display: none;
-}
-
-.mobile-title{
-  display: none;
-}
-
-@media(max-width: 700px) {
-
-  .hero-container{
-    display: none;
-  }
-
-  .header{
-    background-size: cover;
-  }
-
-  .mobile-title{
-    display: contents;
-  }
-
-  .mobile-title h2{
-    font-size: 100px;
-    color: white;
-    top: 0px;
-    text-align: center;
-    position: relative;
-  }
-
-  .mobile-title h3{
-    font-size: 30px;
-    color: white;
-    top: 0px;
-    text-align: center;
-    position: relative;
-  }
-  .mobile-title h3 {
-    flex-basis: 23%;
-    background:black;
-    border-radius: 0px;
-    margin-bottom: 5%;
-    padding: 5px 5px;
-    box-sizing: border-box;
-  }
-
-  .nav-links{
-    text-align: center;
-  }
-  .nav-links ul li{
-    padding: 4px 4px;
-  }
-  .nav-links ul li a{
-    font-size: 20px;
-  }
-  .nav-links {
-    flex-basis: 23%;
-    background:black;
-    border-radius: 0px;
-    margin-bottom: 5%;
-    padding: 10px 12px;
-    box-sizing: border-box;
-  }
-  .nav-links img{
-    width: 20px;
-  }
-
-  .show-row{
-    flex-direction: column;
-  }
-
-  .about-row{
-    flex-direction: column;
-  }
-
-}
-/* -----------------------------------*/
-
 /* ------------------ SHOWS --------------------- */
 .shows{
     width: 80%;
@@ -751,7 +672,7 @@ nav .fas{
 .about-column h2{
   font-size: 40px;
   color: black;
-  text-shadow: 0 0 10px white;
+  text-shadow: 0 0 15px white;
 }
 
 /*-------------footer-------------*/
@@ -770,3 +691,81 @@ nav .fas{
     font-weight: 10;
     bottom: 10px;
 }
+
+/* ------------ MOBILE -------------- */
+nav .fas{
+  display: none;
+}
+
+.mobile-title{
+  display: none;
+}
+
+@media(max-width: 700px) {
+
+  .hero-container{
+    display: none;
+  }
+
+  .header{
+    background-size: cover;
+  }
+
+  .mobile-title{
+    display: contents;
+  }
+
+  .mobile-title h2{
+    font-size: 100px;
+    color: white;
+    top: 0px;
+    text-align: center;
+    position: relative;
+  }
+
+  .mobile-title h3{
+    font-size: 25px;
+    color: white;
+    top: 0px;
+    text-align: center;
+    position: relative;
+
+    flex-basis: 23%;
+    background:black;
+    border-radius: 0px;
+    margin-bottom: 5%;
+    padding: 5px 5px;
+    box-sizing: border-box;
+  }
+
+  .nav-links{
+    text-align: center;
+  }
+  .nav-links ul li{
+    padding: 4px 4px;
+  }
+  .nav-links ul li a{
+    font-size: 20px;
+  }
+  .nav-links {
+    flex-basis: 23%;
+    background:black;
+    border-radius: 0px;
+    margin-bottom: 5%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+  }
+  .nav-links img{
+    width: 20px;
+  }
+
+  .show-row{
+    flex-direction: column;
+  }
+
+  .about-row{
+    flex-direction: column;
+  }
+
+}
+/* -----------------------------------*/
