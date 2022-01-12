@@ -616,14 +616,14 @@ nav .fas{
 
   .mobile-title h2{
     font-size: 100px;
-    top: 20px;
+    top: 0px;
     text-align: center;
     position: relative;
   }
 
   .mobile-title h3{
     font-size: 30px;
-    top: 50px;
+    top: 0px;
     text-align: center;
     position: relative;
   }
