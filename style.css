@@ -574,7 +574,7 @@ body {
   display: block;
 }
 .curr-show img{
-  max-width: 20%;
+  max-width: 70%;
   height: auto;
 }
 
@@ -756,7 +756,7 @@ nav .fas{
     display: block;
   }
   .curr-show img{
-    max-width: 60%;
+    max-width: 90%;
     height: auto;
   }
   /*.mobile-title h2{
