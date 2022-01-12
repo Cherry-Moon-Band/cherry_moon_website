@@ -727,7 +727,7 @@ nav .fas{
 
   .hero-container {
     position: relative;
-    padding: 25px 0;
+    padding: 25px 0px;
     text-align: center;
   }
 
@@ -778,7 +778,7 @@ nav .fas{
     text-align: center;
   }
   .nav-links ul li{
-    padding: 4px 4px;
+    padding: 2px 4px;
   }
   .nav-links ul li a{
     font-size: 20px;
@@ -787,7 +787,7 @@ nav .fas{
     flex-basis: 23%;
     background:black;
     border-radius: 0px;
-    margin-bottom: 5%;
+    margin-bottom: 0%;
     padding: 10px 12px;
     box-sizing: border-box;
   }
