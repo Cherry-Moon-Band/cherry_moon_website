@@ -710,6 +710,10 @@ nav .fas{
   display: none;
 }
 
+.mini-footer{
+  display: none;
+}
+
 @media(max-width: 700px) {
 
   .hero-container {
@@ -720,11 +724,11 @@ nav .fas{
 
   .hero-container h2{
     font-size: 35px;
-    margin-bottom: 200px;
+    padding-bottom: 5%;
   }
-  .hero-container {overflow-clip-margin: auto;}
+
   .hero-container h3{
-    font-size: 25px;
+    font-size: 15px;
     
     flex-basis: 23%;
     background:black;
