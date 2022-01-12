@@ -724,8 +724,8 @@ nav .fas{
 
   .hero-container h2{
     font-size: 85px;
-    padding-bottom: 70%;
-    padding-top: 30%;
+    padding-bottom: 20px;
+    padding-top: auto;
   }
 
   .hero-container h3{
