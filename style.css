@@ -569,6 +569,15 @@ body {
   }
 /*------------------END OF NAME GLITCH-----------------------*/
 
+.curr-show{
+  text-align: center;
+  display: block;
+}
+.curr-show img{
+  max-width: 70%;
+  height: auto;
+}
+
 /* ------------------ SHOWS --------------------- */
 .shows{
     width: 80%;
@@ -718,14 +727,13 @@ nav .fas{
 
   .hero-container {
     position: relative;
-    padding: 65px 0;
+    padding: 25px 0;
     text-align: center;
   }
 
   .hero-container h2{
-    font-size: 85px;
-    padding-bottom: 20px;
-    padding-top: auto;
+    font-size: 65px;
+    padding-top: 0px;
   }
 
   .hero-container h3{
@@ -734,8 +742,8 @@ nav .fas{
     flex-basis: 23%;
     background:black;
     border-radius: 0px;
-    margin-bottom: 5%;
-    padding: 5px 5px;
+    margin-bottom: 0%;
+    padding: 0px 5px;
     box-sizing: border-box;
   }
 
