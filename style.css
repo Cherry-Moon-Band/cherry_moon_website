@@ -607,6 +607,8 @@ body {
     margin-bottom: 5%;
     padding: 10px 12px;
     box-sizing: border-box;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .show-column h4{
     color: white;
