@@ -665,7 +665,7 @@ nav .fa{
     font-size: 18px;
 }
 .show-column:hover{
-    box-shadow: 0 0 25px 0px rgba(49, 4, 23, 0.9);
+    box-shadow: 0 0 25px 0px white;
 }
 /*
 .share-btn1{
