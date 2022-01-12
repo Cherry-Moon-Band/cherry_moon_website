@@ -761,6 +761,15 @@ nav .fas{
     width: 20px;
   }
 
+  .show-column {
+    flex-basis: 23%;
+    background:black;
+    border-radius: 0px;
+    margin-bottom: 5%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+}
+
   .show-row{
     flex-direction: column;
   }
