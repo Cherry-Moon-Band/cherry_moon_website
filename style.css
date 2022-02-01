@@ -66,11 +66,11 @@ nav img{
 .nav-links ul li:hover::after{
     width: 100%;
 }
-.nav-links img{
+.nav-links i{
   width: 25px;
   left: auto;
 }
-.nav-links img:hover{
+.nav-links i:hover{
   opacity: 70%;
 }
 
@@ -828,7 +828,7 @@ nav .fas{
     padding: 10px 12px;
     box-sizing: border-box;
   }
-  .nav-links img{
+  .nav-links i{
     width: 20px;
   }
 
