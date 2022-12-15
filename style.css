@@ -599,7 +599,7 @@ body {
   display: block;
 }
 .curr-show img{
-  max-width: 50%;
+  max-width: 10%;
   height: auto;
 }
 
@@ -786,6 +786,7 @@ nav .fas{
     max-width: 90%;
     height: auto;
   }
+  
 
   /* REMOVED SECTION OF CODE (DNW) : but keep for reference
   .mobile-title h2{
