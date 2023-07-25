@@ -1,55 +1,13 @@
-<!------------------------------------------------------------------------
-    Cherry Moon band website HTML code.
-
-    Created: 01/10/2022
-    Author: Anna Brogowski (les_bro)
-    Co-Authors:
-
-    This file is the Front/Main page of the website.
-    ANY OBJECT YOU PUT IN THE PAGE WILL BE TRANSLATED TO THE WEBSITE
-    LINEARLY. IF YOU PUT ONE OBJECT TOWARD THE TOP OF THE <body> SECTION,
-    THEN IT WILL SHOW UP AT THE TOP OF THE WEBPAGE.
--------------------------------------------------------------------------->
-
 <!DOCTYPE html>
-<html>
-    <!-- 
-        The header is where you put links to style things you may need
-        in your pages. Some are "metadata", some are link connections,
-        and there is one title.
-        Metadata is: data (information) about data. ... Metadata will
-        not be displayed on the page, but is machine parsable. Metadata
-        is used by browsers (how to display content or reload page),
-        search engines (keywords), and other web services. 
-        
-        In order, this list has:
-        - The width of the device the website is on (meta)
-        - The thumbnail image for when the webpage is shared (meta - only 
-            used on the Shows page)
-        - The website title
-        - The first three links (stylesheet, preconnect, and preconnect)
-            are there for the website font connection through Google Fonts
-        - A Font Awesome links connection for icons used throughout the webpage
-
-        The <style> section is a sample of CSS ONLY for this page. The glitch
-        on the front page has weird formatting, so we had to make horizontal
-        scrolling stagnant.
-    -->
-
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link type=""text/css" rel="stylesheet" href="style.css"/>
+        <link href="https://db.onlinewebfonts.com/c/cc7be66e169693c481d9a023001e58a8?family=Funky+Choky" rel="stylesheet"> 
+        <link href="https://db.onlinewebfonts.com/c/38a8e38d23135318aca19fd5cff8e67f?family=Amplitude-Regular" rel="stylesheet"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:image" content="images/band1.png" />
         <title>Cherry Moon</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">        
-        <link rel="icon" href="images/favicon.png">
-
-        <style>
-            html, body {margin: 0; height: 100%; overflow-x: hidden}
-        </style>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-217485253-1">
@@ -63,139 +21,94 @@
         </script>
 
         <!-- -------------------------------------- -->
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="navbar-left">
+                <a href="index.html"><img
+                    class="block"
+                    height="100%"
+                    width="100%"
+                    src="cm-soda-png.png"
+                ></a>
+                <div><a href="shows.html">Shows</a></div>
+                <div><a href="photos.html">Photos</a></div>
+                <div><a href="posters.html">Posters</a></div>
+                <div><a href="mailto: cherrymoonbandva@gmail.com">Contact</a></div>
+                <div><a href="about.html">About</a></div>
+            </div>
+            <div class="navbar-right">
+                <a href="https://www.instagram.com/cherrymoondudes/"><img
+                    class="socials"
+                    style="
+                        width: 32px;
+                        height: 32px;
+                        overflow: visible;
+                        fill: currentColor;
+                    "
+                    src="images/instagram.png"
+                ></a>
+                <a href="https://twitter.com/CherryMoonDudes"><img
+                    class="socials"
+                    style="
+                        width: 32px;
+                        height: 32px;
+                        overflow: visible;
+                        fill: currentColor;
+                    "
+                    src="images/twitter.png"
+                ></a>
+                <a href="https://vm.tiktok.com/TTPdk1nu5b/"><img
+                    class="socials"
+                    style="
+                        width: 32px;
+                        height: 32px;
+                        overflow: visible;
+                        fill: currentColor;
+                    "
+                    src="images/tiktok-128.png"
+                ></a>
+            </div>
+        </div>
+        
+        <div class="fade-animation">
 
-        <!--  REMOVED SECTION OF CODE (DNW) : but keep for reference
-            <style>
-            body {
-                animation: fadeInAnimation ease 1s;
-                animation-iteration-count: 1;
-                animation-fill-mode: forwards;
-            }
-            @keyframes fadeInAnimation {
-                0% {
-                    opacity: 0;
-                }
-                100% {
-                    opacity: 1;
-                }
-            }
-        </style>
-        -->
-
-    </head> <!--This is the end of the header section-->
-    
-    <!--
-        This is the beginning of the body of the webpage, everything you want
-        to see on the webpage goes within the <body> ... </body> brackets.
-    -->
-    <body> 
-
-        <!-- REMOVED SECTION OF CODE (DNW) : but keep for reference
-        <script>
-            document.body.classList.add('fade');
-        </script>
-        -->
-
-        <!-- This is the header, essentially like a word doc, where you see the menu -->
-        <section class="header">
-            <nav>
-                <!-- REMOVED CODE : <a href="index.html"><img src="images/logo.png"></a>-->
-                <div class="nav-links" id="navLinks">
-                    <!-- These are your navigation links, or table of menu tabs -->
-                    <ul>
-                        <!-- 
-                            To add a tab:
-                            - Copy and paste one of the lines below on a new line
-                            - Add the HTML file name in quotations
-                            - Change the name of the page in all caps
-                            A NOTE: The tabs will show up in the order they are in,
-                            so top-to-bottom, they'll show up on the website left-
-                            to-right.
-                            If you want an external link, just swap the HTML file
-                            name with the outbound link, like the CONTACT page
-                            example.
-                            ONCE YOU ADD OR REMOVE A PAGE, YOU HAVE TO ALTER THIS
-                            LIST ON ALL THE OTHER PAGES
-                        -->
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="shows.html">SHOWS</a></li>
-                        <li><a href="photos.html">PHOTOS</a></li>
-                        <li><a href="posters.html">POSTERS</a></li>
-                        <!-- <li><a href="songs.html">SONGS</a></li> -->
-                        <li><a href="mailto: cherrymoonbandva@gmail.com">CONTACT</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <!-- 
-                            This is the Instafram/social media icons list, to add
-                            another, copy the line, change the first set of quotes
-                            too the link you want to go to, and the second set of
-                            quotes after "img src='images/" to the name of the 
-                            image you want to use.
-                         -->
-                         <a href="https://www.instagram.com/cherrymoondudes/"><i style="font-size: 30px; padding-left: 8px;" class="fab fa-instagram icon-3x"></i></a>
-                         <a href="https://twitter.com/CherryMoonDudes"><i style="font-size: 30px; padding-left: 8px;" class="fab fa-twitter icon-3x"></i></a>
-                         <a href="https://vm.tiktok.com/TTPdk1nu5b/"><i style="font-size: 30px; padding-left: 8px;" class="fab fa-tiktok"></i></a>
- 
-                    </ul>
-                </div>
-
-            </nav> <!--This is the end of the menu tab section-->
-
-            <!------------------- REST OF THE WEBPAGE CODE ---------------------->
-            <!-- Here is where you put everything on the webpage, text, images, etc. -->
-
-            <!-- REMOVED SECTION OF CODE (DNW) : but keep for reference
-                <div class="text-box">
+            <div class="band-name">
                 <h1>Cherry Moon</h1>
-                <p>Blacksburg, Virginia's newest psychedelic  rock band</p>
-                <img src="images/band1.png">
-            </div>
-            -->
-            
-            <div class="hero-container">
-                <div class="environment"></div>
-                <h2 class="hero glitch layers" data-text="cherry_moon"><span>Cherry Moon</span></h2>
-                <h3>A psychedelic rock band based in Blacksburg, VA</h3>
+                <p>A psychedelic rock band based in Blacksburg, VA</p>
             </div>
 
-            <!-- REMOVED SECTION OF CODE (DNW) : but keep for reference
-            <div class="mobile-title">
-                <div class="environment"></div>
-                <h2 class="hero glitch layers" data-text="cherry_moon"><span>Cherry</span></h2>
-                <h2 class="hero glitch layers" data-text="cherry_moon"><span>Moon</span></h2>
-                <h3>Blacksburg, Virginia's newest psychedelic rock band</h3>
-            </div> 
-            -->
-
-            <!-- 
-                FRONT PAGE FLYER CHANGE
-                For when you want to change the flyer on the front page:
-                - Add your flyer image to the "images" folder in the
-                    "cherry_moon_website" directory
-                - The first set of quotations below is the URL of where you want the
-                    flyer to go once it's clicked, the second is the source, or where
-                    the image is coming from. JUST CHANGE THE PART AFTER "image/" TO 
-                    THE NAME OF YOUR FILE.
-             -->
-            <div class="curr-show">
-                <h1 style="font-size: 30px; font-weight: bold; color: goldenrod; -webkit-text-stroke: 0.5px black;">Look out for our merch booth at our upcoming shows!</h1>
-                <a href="https://www.cherrymoonband.com/shows.html" ><img style="padding-top: 2rem; padding-bottom: 10rem; width: 40%;" src="cm-soda-png.png"></a>
+            <div class="merch-container">
+                <div class="merch-container-left">
+                    <img
+                        style="
+                            width: 500px;
+                            height: auto;
+                            fill: currentColor;
+                        "
+                        src="images/merch/canShirt.png"
+                    >
+                </div>
+                <div class="merch-text">
+                    <h2>Check out our</h2>
+                    <h1>MERCH</h1>
+                    <h2>at the next show!</h2>
+                </div>
+                <div class="merch-container-right">
+                    <img
+                        style="
+                            width: 400px;
+                            height: auto;
+                            fill: currentColor;
+                        "
+                        src="images/merch/necklace.png"
+                    >
+                </div>
             </div>
 
-        </section>
-
-        <!-- REMOVED SECTION OF CODE (DNW) : but keep for reference 
-            ---------- SCRIPT TO OPEN TOGGLE MENU -----------
-        <script>
-            var navLinks = document.getElementById("navLinks");
-
-            function showMenu(){
-                navLinks.style.right = "0";
-            }
-            function hideMenu(){
-                navLinks.style.right = "-200";
-            }
-            
-        </script> -->
-
-    </body> <!--This is the end of the main webpage body, NOTHING should go below here-->
+            <div class="gap" style="height: 120px;">
+                <!-- Nothing here, this is for space -->
+            </div>
+        </div>
+    </body>
 </html>
