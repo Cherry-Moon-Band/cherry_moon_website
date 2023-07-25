@@ -168,3 +168,37 @@ body {
         color: black;
     }
 }
+
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px;
+}
+
+.player-right{
+    width: 50%;
+    float: right;
+}
+
+.player-left{
+    width: 50%;
+    text-align: center;
+}
+
+.player-left h1{
+    color: goldenrod;
+    font-weight: 50;
+    font-size: 120px;
+    margin-top: -75px;
+}
+
+.player-left h2 {
+    font-family: "Amplitude-Regular";
+    font-size: 50px;
+    color: white;
+}
+
+.gap{
+    height: 50px;
+}
