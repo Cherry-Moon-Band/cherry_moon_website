@@ -75,6 +75,14 @@ body {
     text-align: center;
 }
 
+.desktop-name {
+    display: block;
+}
+
+.mobile-name {
+    display: none;
+}
+
 .band-name h1{
     font-weight: 50;
     font-size: 250px;
@@ -201,4 +209,45 @@ body {
 
 .gap{
     height: 50px;
+}
+
+@media (max-width: 900px) {
+
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        height:fit-content;
+        overflow-x: hidden;
+        background-position:center;
+        min-height: 100vh;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .navbar {
+        display: none;
+    }
+
+    .band-name h1 {
+        font-size: 20vw;
+    }
+
+    .desktop-name {
+        display: none;
+    }
+    
+    .mobile-name {
+        display: block;
+    }
+
+    .band-name p {
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: center;
+        font-size: large;
+        color: goldenrod;
+        margin-top: -4rem;
+        text-shadow: 1px 1px 1px black;
+    }
 }
