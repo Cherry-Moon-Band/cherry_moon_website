@@ -97,7 +97,8 @@ body {
 .band-name p{
     font-family: "Amplitude-Regular";
     text-transform: uppercase;
-    font-weight: 20;
+    font-weight:bolder;
+    font-style: italic;
     font-size: 40px;
     color: goldenrod;
     text-shadow: 3px 3px black;
@@ -217,7 +218,15 @@ body {
     height: 50px;
 }
 
+/* Image wall */
+
+
 @media (max-width: 900px) {
+
+    .image-grid {
+		--num-cols: 2;
+		--row-height: 200px;
+	}
 
     html {
         overflow-x: hidden;
