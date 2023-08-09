@@ -1,136 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link type=""text/css" rel="stylesheet" href="style.css"/>
-        <link href="https://db.onlinewebfonts.com/c/cc7be66e169693c481d9a023001e58a8?family=Funky+Choky" rel="stylesheet"> 
-        <link href="https://db.onlinewebfonts.com/c/38a8e38d23135318aca19fd5cff8e67f?family=Amplitude-Regular" rel="stylesheet"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cherry Moon</title>
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-217485253-1">
-        </script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-217485253-1');
-        </script>
-
-        <!-- -------------------------------------- -->
+        <title>Cherry Moon Official Website</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
+
     <body>
-        <div class="navbar">
-            <div class="navbar-left">
-                <a href="index.html"><img
-                    class="block"
-                    height="100%"
-                    width="100%"
-                    src="cm-soda-png.png"
-                ></a>
-                <div><a href="shows.html">Shows</a></div>
-                <div><a href="photos.html">Photos</a></div>
-                <div><a href="posters.html">Posters</a></div>
-                <div><a href="mailto: cherrymoonbandva@gmail.com">Contact</a></div>
-                <div><a href="about.html">About</a></div>
+        <header>
+            <a href="#" class="logo"><img src="cm-soda-png.png"></a>
+            <ul>
+                <li><a href="#shows">Shows</a></li>
+                <li><a href="#merch">Merch</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="posters.html">Posters</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="mailto: cherrymoonbandva@gmail.com">Contact</a></li>
+            </ul>
+        </header>
+        <!-- Start of parallax -->
+        <section>
+            <img src="/images/parallax/stars.png" id="stars">
+            <img src="/images/parallax/cherryMoon_backRocks.png" id="backRocks">
+            <img src="/images/parallax/cherryMoon_midRocks.png" id="midRocks">
+            <h2 id="title">Cherry Moon</h2>
+            <a href="#shows" id="btn">See a Show</a>
+            <img src="/images/parallax/cherryMoon_frontRocks.png" id="frontRocks">
+        </section>
+        <!-- Below Parallax -->
+        <div class="pages">
+            <div class="shows" id="shows">
+                <h2>Shows</h2>
+                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                <div class="elfsight-app-817ccfab-69b2-4c5d-ba8f-12d26ca9221a"></div>   
             </div>
-            <div class="navbar-right">
-                <a href="https://www.instagram.com/cherrymoondudes/"><img
-                    class="socials"
-                    style="
-                        width: 32px;
-                        height: 32px;
-                        overflow: visible;
-                        fill: currentColor;
-                    "
-                    src="images/instagram.png"
-                ></a>
-                <a href="https://twitter.com/CherryMoonDudes"><img
-                    class="socials"
-                    style="
-                        width: 32px;
-                        height: 32px;
-                        overflow: visible;
-                        fill: currentColor;
-                    "
-                    src="images/twitter.png"
-                ></a>
-                <a href="https://vm.tiktok.com/TTPdk1nu5b/"><img
-                    class="socials"
-                    style="
-                        width: 32px;
-                        height: 32px;
-                        overflow: visible;
-                        fill: currentColor;
-                    "
-                    src="images/tiktok-128.png"
-                ></a>
-                <a href="https://on.soundcloud.com/AuQ1Z"><img
-                    class="socials"
-                    style="
-                        width: 32px;
-                        height: 32px;
-                        overflow: visible;
-                        fill: currentColor;
-                    "
-                    src="images/soundcloud.png"
-                ></a>
+            <div class="merch" id="merch">
+                <h2>Merch</h2>
+                <p>Merch section</p>
+            </div>
+            <div class="about" id="about">
+                <h2>About the Band</h2>
+                <p>About section</p>
             </div>
         </div>
 
-        <div class="mobile-nav">
-            <img src="/cm-soda-png.png">
-        </div>
-        
-        <div class="fade-animation">
+        <script>
+            let stars = document.getElementById('stars')
+            let backRocks = document.getElementById('backRocks')
+            let midRocks = document.getElementById('midRocks')
+            let title = document.getElementById('title')
+            let btn = document.getElementById('btn')
+            let frontRocks = document.getElementById('frontRocks')
 
-            <div class="band-name">
-                <h1 class="desktop-name">Cherry Moon</h1>
-                <h1 class="mobile-name" style="text-align: center; margin-top: 5rem">Cherry</h1>
-                <h1 class="mobile-name" style="text-align: center; margin-top: -12vh">Moon</h1>
-                <p>A psychedelic rock band based in Blacksburg, VA</p>
-            </div>
-
-            <div class="merch-container">
-                <div class="merch-container-left">
-                    <img
-                        style="
-                            width: 500px;
-                            height: auto;
-                            fill: currentColor;
-                        "
-                        src="images/merch/canShirt.png"
-                    >
-                </div>
-                <div class="merch-text">
-                    <h2>Check out our</h2>
-                    <h1>MERCH</h1>
-                    <h2>at the next show!</h2>
-                </div>
-                <div class="merch-container-right">
-                    <img
-                        style="
-                            width: 400px;
-                            height: auto;
-                            fill: currentColor;
-                        "
-                        src="images/merch/necklace.png"
-                    >
-                </div>
-            </div>
-
-            <div class="player">
-                <div class="player-left">
-                    <h2>Listen on</h2>
-                    <h1>Soundcloud</h1>
-                </div>
-                <!-- Soundcloud Player -->
-                <div class="player-right">
-                    <iframe width="80%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1562801254&color=%23ff00ae&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                </div>
-        </div>
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                backRocks.style.top = value * 0.65 + 'px';
+                midRocks.style.top = value * 0.35 + 'px';
+                title.style.marginBottom = value * 4 + 'px';
+                btn.style.marginBottom = value * 4 + 'px';
+                frontRocks.style.top = value * 0 + 'px';
+            })
+        </script>
     </body>
+
+    <footer class="site-footer">
+        <h3>Socials</h3>
+        <div class="socials">
+            <a href="https://twitter.com/CherryMoonDudes"><img src="images/twitter.png"></a>
+        </div>
+    </footer>
 </html>

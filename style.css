@@ -1,498 +1,148 @@
+@import url(https://db.onlinewebfonts.com/c/cc7be66e169693c481d9a023001e58a8?family=Funky+Choky);
+@import url(https://db.onlinewebfonts.com/c/38a8e38d23135318aca19fd5cff8e67f?family=Amplitude-Regular);
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
 body {
-    margin: 0px;
-    font-family: "Funky Choky";
     min-height: 100vh;
-    background-image: url(images/background2_edited.JPG);
-    background-position:center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: black;
+    background: linear-gradient(rgb(27, 14, 59), rgb(27, 57, 165)); /* first is top, second is bottom */
+    overflow-x: hidden;
 }
 
-.navbar {
-    padding: 10px;
-    font-size: 20px;
+header {
+    font-family: 'Amplitude-Regular';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 30px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.71);
-    background-color: rgba(0, 0, 0, 0.854);
+    z-index: 10000;
 }
-
-.navbar a{
-    color: white;
-    text-decoration:none;
+header .logo img {
+    height: 10rem;
 }
-
-.mobile-nav {
-    display: none;
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.navbar-left img {
-    display: block;
-    max-width: 50px;
-    max-height: 90px;
-    margin-right: 30px;
+header ul li {
+    list-style: none;
     margin-left: 20px;
-    width: auto;
-    height: auto;
-}
-
-.navbar-left div {
-    font-family: "Amplitude-Regular";
-    text-transform: uppercase;
-    font-weight: 550;
-}
-
-.navbar-left a:hover {
-    transform: scale(1.2);
-    color: goldenrod;
-}
-
-.navbar-left {
-    display: flex;
-    align-items: center;
-    color: whitesmoke;
-}
-
-.navbar-left > * {
-    padding: 10px;
-}
-
-.navbar-right {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-right img {
-    padding: 6px;
-}
-
-.navbar-right img:hover {
-    transform: scale(1.2);
-    background: goldenrod;
-}
-
-.band-name{
-    align-items: center;
-    text-align: center;
-}
-
-.desktop-name {
-    display: block;
-}
-
-.mobile-name {
-    display: none;
-}
-
-.band-name h1{
-    font-weight: 50;
-    font-size: 250px;
-    color: white;
-}
-
-
-.band-name p{
-    font-family: "Amplitude-Regular";
-    text-transform: uppercase;
-    font-weight:bolder;
-    font-style: italic;
-    font-size: 40px;
-    color: goldenrod;
-    text-shadow: 3px 3px black;
-    margin-top: -120px;
-    margin-bottom: 120px;
-    padding-bottom: 110px;
-}
-
-.title-text h1{
-    text-align: center;
-    font-size: 100px;
-    color: goldenrod;
-    margin-bottom: -20px;
-}
-
-.merch-container {
-    background-color: rgba(0, 0, 0, 0.789);
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
-    overflow: visible;
-}
-
-.merch-text {
-    width: 33.33%;
-}
-
-.merch-text h1{
-    color: goldenrod;
-    font-weight: 50;
-    font-size: 120px;
-    margin-top: -40px;
-    margin-bottom: -40px;
-    text-align: center;
-}
-
-.merch-text h2 {
-    font-family: "Amplitude-Regular";
-    color: white;
-    font-weight: 20;
-    font-size: 40px;
-    text-align: center;
-}
-
-.merch-container-left {
-    width: 33.33%;
-}
-
-.merch-container-left img {
-    float: right;
-    height: auto;
-}
-
-.merch-container-left img:hover {
-    transform: rotate(-20deg) scale(1.2) translateZ(0);
-    transition-property: transform;
-    transition-duration: .3s;
-}
-
-.merch-container-right {
-    float: left;
-    width: 33.33%;
-}
-
-.merch-container-right img { /* Find out how to put this on the left side */
-    height: auto;
-}
-
-.merch-container-right img:hover {
-    transform: rotate(20deg) scale(1.2) translateZ(0);
-    transition-property: transform;
-    transition-duration: .3s;
-}
-
-.fade-animation {
-    animation: transitionIn 1.5s;
-}
-
-@keyframes transitionIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-        color: black;
-    }
-}
-
-.player {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 120px;
-}
-
-.player-right{
-    width: 50%;
-    float: right;
-}
-
-.player-left{
-    width: 50%;
-    text-align: center;
-    text-shadow:3px 3px #000000;
-}
-
-.player-left h1{
-    color: goldenrod;
-    font-weight: 50;
-    font-size: 120px;
-    margin-top: -75px;
-}
-
-.player-left h2 {
-    font-family: "Amplitude-Regular";
-    font-size: 50px;
-    color: white;
-}
-
-.gap{
-    height: 50px;
-}
-
-/* About Us */
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-us {
-    width: 100%;
-    height: 100%;
-    padding: 4rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.about-wrapper {
-    width: 90%;
-    flex-wrap: wrap;
-}
-
-.member {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 3.5rem;
-    background-size: cover;
-    box-shadow: .3rem .3rem 0.5rem black;
-    position: relative;
-    overflow: visible;
-    transition: box-shadow 0.5s;
-    height: 40rem;
-    width: 30rem;
-}
-
-.member:hover {
-    transform: scale(1.2);
-    transition-property: transform;
-    transition-duration: .3s;
-}
-.member-text:hover {
-    display: contents;
-}
-
-.nick {
-    background-image: url("/images/nick.png");
-}
-
-.kelly {
-    background-image: url("/images/kelly.jpg");
-    background-position: center;
-}
-
-.katie {
-    background-image: url("/images/katie.png");
-    background-position: right;
-}
-
-.forde {
-    background-image: url("/images/Forde.jpg");
-    background-position: center;
-}
-
-.will {
-    background-image: url("/images/will.png");
-    background-position: center;
-}
-
-.member-text {
-    text-align: center;
-    letter-spacing: .1rem;
-}
-
-.member-text h1 {
-    padding-top: 35%;
-    color: black;
-    text-shadow: 0rem 0rem 1rem white;
-    font-weight: 20;
-    font-size: 9rem;
-    margin-bottom: -3rem;
-}
-
-.member-text h2 {
-    font-family: "Amplitude-Regular";
-    color: goldenrod;
-    text-shadow: 0rem 0rem 0.4rem black;
-    font-size: 2rem;
-    font-weight: bolder;
-}
-
-.member-text p {
-    font-family: "Amplitude-Regular";
-    color: white;
-    text-shadow: 0rem 0rem 1rem black;
-    font-size: 1.2rem;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px black;
     font-weight: bold;
 }
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+}
+header ul li a:hover {
+    color: goldenrod;
+}
 
-/* Mobile adaptations */
-@media (max-width: 900px) {
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, rgb(27, 14, 59), transparent);
+    z-index: 1000;
+}
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img#frontRocks{
+    z-index: 10;
+}
 
-    .image-grid {
-		--num-cols: 2;
-		--row-height: 200px;
-	}
+#title {
+    position: absolute;
+    color: goldenrod;
+    font-family: 'Funky Choky';
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+    margin-top: -180px;
+    text-shadow: 2px 2px 3px black;
+}
 
-    html {
-        overflow-x: hidden;
-    }
+#btn {
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 10px;
+    background: goldenrod;
+    color: black;
+    font-size: 2em;
+    z-index: 9;
+    transform: translateY(100px);
+    font-family: 'Amplitude-Regular';
+}
 
-    body {
-        height:fit-content;
-        overflow-x: hidden;
-        background-position:center;
-        min-height: 100vh;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    .navbar {
-        display: none;
-    }
+.pages {
+    position: relative;
+    padding: 100px;
+    background: rgb(27, 14, 59);
+    text-align: center;
+}
+.pages h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: goldenrod;
+    font-family: 'Funky Choky';
+}
+.pages p, h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Amplitude-Regular';
+}
 
-    .mobile-nav {
-        margin: 0px;
-        display: block;
-        background-color: #000000;
-        height: 7vh;
-    }
-
-    .mobile-nav img {
-        padding-top: 2vh;
-        width: 40px;
-        height:fit-content;
-        display: flex;
-        margin: 0 auto;
-        overflow: visible;
-    }
-
-    .band-name h1 {
-        font-size: 20vw;
-    }
-
-    .desktop-name {
-        display: none;
-    }
-    
-    .mobile-name {
-        display: block;
-    }
-
-    .band-name p {
-        margin-top: auto;
-        margin-bottom: auto;
-        text-align: center;
-        font-size: 5vw;
-        color: goldenrod;
-        margin-top: -4rem;
-        text-shadow: 1px 1px black;
-    }
-
-    .title-text h1{
-        font-size: 19vw;
-        line-height: 80%;
-        margin-bottom: -5rem;
-    }
-
-    .title-text h3 {
-        margin-top: 6rem;
-        margin-bottom: -1rem;
-    }
-
-    .elf-posters {
-        margin-top: 3rem;
-    }
-
-    .elfsight {
-        margin-top: 8rem;
-    }
-
-    .merch-container {
-        max-width: 100%;
-        background-color: rgba(0, 0, 0, 0.789);
-        height: auto;
-        display: inline-block;
-        margin: 0 auto;
-        text-align:center
-    }
-    
-    .merch-text {
-        width: 100%;
-        text-align: center;
-    }
-
-    .merch-text h1 {
-        font-size: 20vw;
-    }
-
-    .merch-text h2 {
-        font-size: 8vw;
-    }
-    
-    .merch-container-left {
-        max-width: 100%;
-    }
-
-    .merch-container-left img {
-        display: block;
-        margin: 0 auto;
-    }
-    
-    .merch-container-right {
-        max-width: 100%;
-    }
-
-    .merch-container-right img {
-        display: block;
-        margin: 0 auto;
-    }
-
-    .player {
-        display: inline;
-        width: 100%;
-    }
-
-    .player-left{
-        text-align: center;
-    }
-
-    .player-right {
-        width: 100vw;
-        text-align:center;
-        padding-bottom: 3rem;
-    }
-
-    .nick {
-        background-position: 20%;
-    }
-
-    .kelly {
-        background-position: 20%;
-    }
-
-    .katie {
-        background-position: 65%;
-    }
-
-    .member-text {
-        width: 100%;
-    }
-
-    .member-text h1 {
-        font-size: 7rem;
-        padding-top: 40%;
-        margin-bottom: -5rem;
-        margin-top: 14rem;
-    }
-
-    .member-text h2 {
-        font-size: 3rem;
-        margin-bottom: -1rem;
-    }
-
-    .member-text p {
-        background-color: black;
-        width: 100%;
-        height: auto;
-        text-align: center;
-        box-shadow: .3rem .3rem 0.5rem black;
-    }
+.site-footer {
+    background: black;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.site-footer h3 {
+    padding: 20px;
+    padding-top: 70px;
+}
+.socials {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socials:hover {
+    opacity: 50%;
 }
