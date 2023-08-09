@@ -13,13 +13,14 @@
                 <li><a href="#merch">Merch</a></li>
                 <li><a href="photos.html">Photos</a></li>
                 <li><a href="posters.html">Posters</a></li>
+                <li><a href="#songs">Songs</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="mailto: cherrymoonbandva@gmail.com">Contact</a></li>
             </ul>
         </header>
         <!-- Start of parallax -->
         <section>
-            <img src="/images/parallax/stars.png" id="stars">
+            <img src="/images/parallax/stars.png" style="overflow-x: hidden;" id="stars">
             <img src="/images/parallax/cherryMoon_backRocks.png" id="backRocks">
             <img src="/images/parallax/cherryMoon_midRocks.png" id="midRocks">
             <h2 id="title">Cherry Moon</h2>
@@ -29,17 +30,68 @@
         <!-- Below Parallax -->
         <div class="pages">
             <div class="shows" id="shows">
-                <h2>Shows</h2>
+                <h2 style="padding-top: 0;">Shows</h2>
                 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-                <div class="elfsight-app-817ccfab-69b2-4c5d-ba8f-12d26ca9221a"></div>   
+                <div class="elfsight-app-817ccfab-69b2-4c5d-ba8f-12d26ca9221a"></div>
             </div>
             <div class="merch" id="merch">
                 <h2>Merch</h2>
                 <p>Merch section</p>
             </div>
+            <div class="songs" id="songs">
+                <h2>Songs</h2>
+                <!-- Soundcloud Player -->
+                <div class="player">
+                    <iframe width="90%" height="600" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1562801254&color=%23ff00ae&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                </div>
+            </div>
             <div class="about" id="about">
                 <h2>About the Band</h2>
-                <p>About section</p>
+                <div style="padding-bottom: 100px;">
+                    <!-- Image grid for introductions, ref: https://codepen.io/jonathanharrell/pen/vVEerg -->
+                    <!-- Linear gradient on backgrounds looks really good for About pictures.-->
+                    <div class="about-wrapper center">
+                        <div class="member nick">
+                            <div class="member-text">
+                                <h1 class="member-name">Nick</h1>
+                                <h2 class="member-instrument">Lead Vocals & Guitar</h2>
+                                <p class="inspo">Inspired by<br>King Gizzard & The Lizard<br>Wizard, Pink Floyd, Grateful Dead</p>
+                            </div>
+                        </div>
+
+                        <div class="member kelly">
+                            <div class="member-text">
+                                <h1 class="member-name">Kelly</h1>
+                                <h2 class="member-instrument">Bass</h2>
+                                <p class="inspo">Inspired by<br>The Beatles, Courtney<br>Barnett, The Velvet Underground</p>
+                            </div>
+                        </div>
+
+                        <div class="member forde">
+                            <div class="member-text">
+                                <h1 class="member-name">Forde</h1>
+                                <h2 class="member-instrument">Lead Guitar</h2>
+                                <p class="inspo">Inspired by<br>Jimi Hendrix, Frank Zappa,<br>Daikaiju</p>
+                            </div>
+                        </div>
+
+                        <div class="member katie">
+                            <div class="member-text">
+                                <h1 class="member-name">Katie</h1>
+                                <h2 class="member-instrument">Keys</h2>
+                                <p class="inspo">Inspired by<br>Audioslave, Radiohead,<br>Smashing Pumpkins</p>
+                            </div>
+                        </div>
+
+                        <div class="member will">
+                            <div class="member-text">
+                                <h1 class="member-name">Will</h1>
+                                <h2 class="member-instrument">Drums</h2>
+                                <p class="inspo">Inspired by<br>R.E.M, Fleet Foxes,<br>Led Zeppelin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -64,9 +116,12 @@
     </body>
 
     <footer class="site-footer">
-        <h3>Socials</h3>
         <div class="socials">
-            <a href="https://twitter.com/CherryMoonDudes"><img src="images/twitter.png"></a>
+            <a href="https://twitter.com/CherryMoonDudes" id="insta"><img src="images/instagram.png"></a>
+            <a href="https://twitter.com/CherryMoonDudes" id="twitter"><img src="images/twitter.png"></a>
+            <a href="https://twitter.com/CherryMoonDudes" id="fb"><img src="images/facebook.png"></a>
+            <a href="https://twitter.com/CherryMoonDudes" id="tiktok"><img src="images/tiktok-128.png"></a>
+            <a href="https://twitter.com/CherryMoonDudes" id="soundcloud"><img src="images/soundcloud.png"></a>
         </div>
     </footer>
 </html>
