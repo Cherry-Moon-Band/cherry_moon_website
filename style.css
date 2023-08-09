@@ -30,6 +30,9 @@ header {
 header .logo img {
     height: 10rem;
 }
+header .logo img:hover {
+    transform: scale(1.2);
+}
 header ul {
     display: flex;
     justify-content: center;
@@ -97,12 +100,16 @@ section img#frontRocks{
     text-decoration: none;
     padding: 8px 30px;
     border-radius: 10px;
-    background: goldenrod;
+    background: white;
     color: black;
     font-size: 2em;
     z-index: 9;
     transform: translateY(100px);
     font-family: 'Amplitude-Regular';
+}
+#btn:hover {
+    background-color: goldenrod;
+    color: white;
 }
 
 .pages {
