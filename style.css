@@ -1,34 +1,99 @@
 @import url(https://db.onlinewebfonts.com/c/cc7be66e169693c481d9a023001e58a8?family=Funky+Choky);
 @import url(https://db.onlinewebfonts.com/c/38a8e38d23135318aca19fd5cff8e67f?family=Amplitude-Regular);
-* {
+html * {
     margin: 0;
     padding: 0;
 }
-
-body  {
-    display: block;
-    height: 100vh;
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-
-nav {
-    display: flex;
+html h1 {
+    color: goldenrod;
+    font-family: 'Funky Choky';
+    font-weight: 40;
 }
-nav a {
-    text-decoration: none;
+html h3 {
     color: white;
     font-family: "Amplitude-Regular";
-    display: block;
-    padding: 1em;
-}
-nav li {
-    display: inline;
-    font-size: 1.5em;
 }
 
-.content {
-    font-size: 11vw;
-    font-family: 'Funky Choky';
+#nav {
+	width: 100%;
+	float: right;
+	margin: 0 0 3em 0;
+	padding: 0;
+	list-style: none;
+	background-color: black;
+    padding-right: 2em;
+}
+#nav li {
+	float: right; 
+}
+#nav li a {
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+    font-family: "Amplitude-Regular";
+    font-size: 1em;
+}
+
+body  {
+    margin: 0;
+    width: 100vw;
+}
+
+.landing {
     font-weight: lighter;
+    height: 100vh;
+    width: 100vw;
     text-align: right;
-    padding: 1em;
+    background-image: url('images/background_1.JPG');
+    background-position: 45%;
+    background-size: cover;
+}
+.landing h1 {
+    font-size: 5.5em;
+    background-position: center;
+    background-size: contain;
+    font-weight: 40;
+    line-height: 0.85em;
+    position:relative;
+    text-align: center;
+}
+.landing h3 {
+    font-size: 2.5em;
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    padding-right: 0.3em;
+}
+
+.shows {
+    background: black;
+}
+
+@media (min-width: 810px){
+    .landing {
+        height: 100vh;
+    }
+    .landing h1 {
+        font-size: 12em;
+        position: absolute;
+        top: 0.5em;
+        text-align: left;
+        left: 0;
+        padding-left: 0.3em;
+    }
+    .landing h3 {
+        font-size: 5em;
+        padding-right: 0.5em;
+    }
+
+    #nav li a {
+        font-size: 2em;
+    }
+    
 }
