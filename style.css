@@ -1,269 +1,34 @@
 @import url(https://db.onlinewebfonts.com/c/cc7be66e169693c481d9a023001e58a8?family=Funky+Choky);
 @import url(https://db.onlinewebfonts.com/c/38a8e38d23135318aca19fd5cff8e67f?family=Amplitude-Regular);
-
-*
-{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
-body {
-    min-height: 100vh;
-    background: linear-gradient(rgb(27, 14, 59), rgb(27, 57, 165)); /* first is top, second is bottom */
-    overflow-x: hidden;
-}
-
-header {
-    font-family: 'Amplitude-Regular';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10000;
-}
-header .logo img {
-    height: 10rem;
-}
-header .logo img:hover {
-    transform: scale(1.2);
-}
-header ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-header ul li {
-    list-style: none;
-    margin-left: 20px;
-    font-size: 1.5em;
-    text-shadow: 1px 1px 3px black;
-    font-weight: bold;
-}
-header ul li a {
-    text-decoration: none;
-    padding: 6px 15px;
-    color: white;
-}
-header ul li a:hover {
-    color: goldenrod;
-}
-
-section {
-    position: relative;
-    width: 100%;
+body  {
+    display: block;
     height: 100vh;
-    padding: 100px;
+}
+
+nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
-section::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top, rgb(27, 14, 59), transparent);
-    z-index: 1000;
-}
-section img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
-}
-section img#frontRocks{
-    z-index: 10;
-}
-
-#title {
-    position: absolute;
-    color: goldenrod;
-    font-family: 'Funky Choky';
-    white-space: nowrap;
-    font-size: 7.5vw;
-    z-index: 9;
-    margin-top: -180px;
-    text-shadow: 2px 2px 3px black;
-}
-
-#btn {
+nav a {
     text-decoration: none;
-    padding: 8px 30px;
-    border-radius: 10px;
-    background: white;
-    color: black;
-    font-size: 2em;
-    z-index: 9;
-    transform: translateY(100px);
-    font-family: 'Amplitude-Regular';
-}
-#btn:hover {
-    background-color: goldenrod;
     color: white;
+    font-family: "Amplitude-Regular";
+    display: block;
+    padding: 1em;
 }
-
-.pages {
-    position: relative;
-    padding: 100px;
-    background: rgb(27, 14, 59);
-    text-align: center;
-}
-.pages h2 {
-    font-size: 3.5em;
-    margin-bottom: 10px;
-    color: goldenrod;
-    font-family: 'Funky Choky';
-    padding-top: 100px;
-}
-.pages p, h3 {
+nav li {
+    display: inline;
     font-size: 1.5em;
-    margin-bottom: 10px;
-    color: white;
-    font-family: 'Amplitude-Regular';
 }
 
-.about {
-    width: 100%;
-    height: 100%;
-    padding: 4rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.about-wrapper {
-    width: 90%;
-    flex-wrap: wrap;
-}
-
-.member {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 3.5rem;
-    background-size: cover;
-    box-shadow: .3rem .3rem 0.5rem black;
-    position: relative;
-    overflow: visible;
-    transition: box-shadow 0.5s;
-    height: 40rem;
-    width: 40rem;
-}
-
-.member:hover {
-    transform: scale(1.2);
-    transition-property: transform;
-    transition-duration: .3s;
-}
-.member-text:hover {
-    display: contents;
-}
-
-.nick {
-    background-image: url("/images/nick.png");
-}
-
-.kelly {
-    background-image: url("/images/kelly.jpg");
-    background-position: center;
-}
-
-.katie {
-    background-image: url("/images/katie.png");
-    background-position: right;
-}
-
-.forde {
-    background-image: url("/images/Forde.jpg");
-    background-position: center;
-}
-
-.will {
-    background-image: url("/images/will.png");
-    background-position: center;
-}
-
-.member-text {
-    text-align: center;
-    letter-spacing: .1rem;
-}
-
-.member-text h1 {
-    padding-top: 55%;
-    color: black;
-    text-shadow: 0rem 0rem 1rem white;
-    font-weight: 20;
-    font-size: 9rem;
-    margin-bottom: -10rem;
+.content {
+    font-size: 11vw;
     font-family: 'Funky Choky';
-}
-
-.member-text h2 {
-    font-family: 'Amplitude-Regular';
-    color: goldenrod;
-    text-shadow: 0rem 0rem 0.4rem black;
-    font-size: 2rem;
-    font-weight: bolder;
-}
-
-.member-text p {
-    font-family: 'Amplitude-Regular';
-    color: white;
-    text-shadow: 0rem 0rem 1rem black;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.site-footer {
-    background: black;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: auto;
-}
-.site-footer h3 {
-    padding: 20px;
-    padding-top: 70px;
-}
-.socials {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 70px;
-    padding-top: 70px;
-}
-.socials img {
-    height: 5rem;
-    padding: 20px;
-}
-#insta:hover {
-    opacity: 50%;
-}
-#twitter:hover {
-    opacity: 50%;
-}
-#fb:hover {
-    opacity: 50%;
-}
-#tiktok:hover {
-    opacity: 50%;
-}
-#soundcloud:hover {
-    opacity: 50%;
-}
-
-@media only screen and (max-width: 900px){    
-
+    font-weight: lighter;
+    text-align: right;
+    padding: 1em;
 }
