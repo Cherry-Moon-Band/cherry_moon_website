@@ -209,10 +209,11 @@ body  {
         left: 5em;
         font-size: 3em;
         background: white;
+        color: goldenrod;
     }
     #btn:hover {
         background: goldenrod;
-        color: white;
+        color: black;
     }
     .merch-div {
         padding-top: 3em;
