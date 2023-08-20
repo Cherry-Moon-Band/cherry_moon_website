@@ -208,6 +208,7 @@ body  {
         top: 10em;
         left: 5em;
         font-size: 3em;
+        background: white;
     }
     #btn:hover {
         background: goldenrod;
