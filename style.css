@@ -80,8 +80,8 @@ body  {
     text-decoration: none;
     padding: 8px 30px;
     border-radius: 10px;
-    background: white;
-    color: black;
+    background-color: white;
+    color: goldenrod;
     font-size: 1.6em;
     font-weight: 600;
     z-index: 9;
@@ -116,7 +116,8 @@ body  {
     background-size: cover;
     align-content: center;
     text-align: center;
-    height: 500px;
+    height: inherit;
+    margin: 10px;
 }
 
 .player {
@@ -208,11 +209,11 @@ body  {
         top: 10em;
         left: 5em;
         font-size: 3em;
-        background: white;
+        background-color: white;
         color: goldenrod;
     }
     #btn:hover {
-        background: goldenrod;
+        background-color: goldenrod;
         color: black;
     }
     .merch-div {
